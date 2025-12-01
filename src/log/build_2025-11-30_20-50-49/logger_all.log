@@ -1,0 +1,404 @@
+[0.270s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.270s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=36, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f174383d000>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1743941e10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1743941e10>>, mixin_verb=('build',))
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.600s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/Ur5_simulation/src'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'python'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extensions ['python_setup_py']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(IFRA_LinkAttacher) by extension 'python_setup_py'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'ros'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extensions ['cmake', 'python']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'cmake'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extensions ['python_setup_py']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Description) by extension 'python_setup_py'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ros'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['cmake', 'python']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'cmake'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'python'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(Universal_Robots_ROS2_Gazebo_Simulation) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extension 'colcon_pkg'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extensions ['ros']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(grasping_objects) by extension 'ros'
+[0.646s] DEBUG:colcon.colcon_core.package_identification:Package 'grasping_objects' with type 'ros.ament_cmake' and name 'grasping_objects'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'ignore'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'ignore_ament_install'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extensions ['colcon_pkg']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'colcon_pkg'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extensions ['colcon_meta']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'colcon_meta'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extensions ['ros']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'ros'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extensions ['cmake', 'python']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'cmake'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'python'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extensions ['python_setup_py']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper) by extension 'python_setup_py'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extension 'ignore'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extension 'ignore_ament_install'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extensions ['colcon_pkg']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extension 'colcon_pkg'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extensions ['colcon_meta']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extension 'colcon_meta'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extensions ['ros']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_controllers) by extension 'ros'
+[0.661s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_robotiq_gripper/robotiq_controllers' with type 'ros.ament_cmake' and name 'robotiq_controllers'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extensions ['ignore', 'ignore_ament_install']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extension 'ignore'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extension 'ignore_ament_install'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extensions ['colcon_pkg']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extension 'colcon_pkg'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extensions ['colcon_meta']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extension 'colcon_meta'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extensions ['ros']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_description) by extension 'ros'
+[0.664s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_robotiq_gripper/robotiq_description' with type 'ros.ament_cmake' and name 'robotiq_description'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extension 'ignore'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extension 'ignore_ament_install'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extensions ['colcon_pkg']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extension 'colcon_pkg'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extensions ['colcon_meta']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extension 'colcon_meta'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extensions ['ros']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_driver) by extension 'ros'
+[0.686s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_robotiq_gripper/robotiq_driver' with type 'ros.ament_cmake' and name 'robotiq_driver'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extension 'ignore'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extension 'ignore_ament_install'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extensions ['colcon_pkg']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extension 'colcon_pkg'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extensions ['colcon_meta']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extension 'colcon_meta'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extensions ['ros']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_robotiq_gripper/robotiq_hardware_tests) by extension 'ros'
+[0.701s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_robotiq_gripper/robotiq_hardware_tests' with type 'ros.ament_cmake' and name 'robotiq_hardware_tests'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extension 'ignore'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extension 'ignore_ament_install'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extensions ['colcon_pkg']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extension 'colcon_pkg'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extensions ['colcon_meta']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extension 'colcon_meta'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extensions ['ros']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_moveit_config) by extension 'ros'
+[0.704s] DEBUG:colcon.colcon_core.package_identification:Package 'ur5_camera_gripper_moveit_config' with type 'ros.ament_cmake' and name 'ur5_camera_gripper_moveit_config'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extension 'ignore'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extension 'ignore_ament_install'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extensions ['colcon_pkg']
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extension 'colcon_pkg'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extensions ['colcon_meta']
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extension 'colcon_meta'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extensions ['ros']
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_camera_gripper_new_moveit_config) by extension 'ros'
+[0.706s] DEBUG:colcon.colcon_core.package_identification:Package 'ur5_camera_gripper_new_moveit_config' with type 'ros.ament_cmake' and name 'ur5_camera_gripper_new_moveit_config'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'ignore'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'ignore_ament_install'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extensions ['colcon_pkg']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'colcon_pkg'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extensions ['colcon_meta']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'colcon_meta'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extensions ['ros']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'ros'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extensions ['cmake', 'python']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'cmake'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'python'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extensions ['python_setup_py']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_simulation) by extension 'python_setup_py'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extension 'ignore'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extension 'ignore_ament_install'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extensions ['colcon_pkg']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extension 'colcon_pkg'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extensions ['colcon_meta']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extension 'colcon_meta'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extensions ['ros']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(ur5e_sim) by extension 'ros'
+[0.709s] DEBUG:colcon.colcon_core.package_identification:Package 'ur5e_sim' with type 'ros.ament_cmake' and name 'ur5e_sim'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'ignore_ament_install'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extensions ['colcon_pkg']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'colcon_pkg'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extensions ['colcon_meta']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'colcon_meta'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extensions ['ros']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'ros'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extensions ['cmake', 'python']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'cmake'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'python'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extensions ['python_setup_py']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(ur_yt_sim) by extension 'python_setup_py'
+[0.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.710s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'cmake_target' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'cmake_clean_cache' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'cmake_clean_first' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'cmake_force_configure' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'ament_cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'catkin_cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'grasping_objects' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.750s] DEBUG:colcon.colcon_core.verb:Building package 'grasping_objects' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/grasping_objects', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/grasping_objects', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/grasping_objects', 'symlink_install': False, 'test_result_base': None}
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_target' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_clean_first' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'cmake_force_configure' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'ament_cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'robotiq_controllers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.750s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_controllers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/robotiq_controllers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/robotiq_controllers', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_controllers', 'symlink_install': False, 'test_result_base': None}
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_args' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_target' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.751s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/robotiq_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/robotiq_description', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_description', 'symlink_install': False, 'test_result_base': None}
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_args' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_target' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'robotiq_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.752s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/robotiq_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/robotiq_driver', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_driver', 'symlink_install': False, 'test_result_base': None}
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'cmake_target' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'ur5e_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.752s] DEBUG:colcon.colcon_core.verb:Building package 'ur5e_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/ur5e_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/ur5e_sim', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ur5e_sim', 'symlink_install': False, 'test_result_base': None}
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_target' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'robotiq_hardware_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.753s] DEBUG:colcon.colcon_core.verb:Building package 'robotiq_hardware_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/robotiq_hardware_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/robotiq_hardware_tests', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_hardware_tests', 'symlink_install': False, 'test_result_base': None}
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.753s] DEBUG:colcon.colcon_core.verb:Building package 'ur5_camera_gripper_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/ur5_camera_gripper_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/ur5_camera_gripper_moveit_config', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ur5_camera_gripper_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'ur5_camera_gripper_new_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.754s] DEBUG:colcon.colcon_core.verb:Building package 'ur5_camera_gripper_new_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/Ur5_simulation/src/build/ur5_camera_gripper_new_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/Ur5_simulation/src/install/ur5_camera_gripper_new_moveit_config', 'merge_install': False, 'path': '/workspace/Ur5_simulation/src/ur5_camera_gripper_new_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.754s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.755s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.755s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/Ur5_simulation/src/ur5e_sim' with build type 'ament_cmake'
+[0.755s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/Ur5_simulation/src/ur5e_sim'
+[0.770s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.770s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.770s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/apptainer-1.1.9-kcushwgmjhtflb6gnxpwvdy72qsbb6bm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/squashfuse-0.5.0-ctbdcg5tidbdzkd3ldhs5lbch3uvjm6m' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/lzo-2.10-43aw7noxkjsctl2g2mevsgz75wtdaujg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/lz4-1.9.4-sbhwrhl66lyhjo6zdrlt5ryw4y7tlbac' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libfuse-3.16.2-eutxysaxxuyzi2gabrrviqzjqu25rwrp' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/squashfs-4.6.1-s7vn2mextlfw63slhwscbl7cyz4egnbc' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libgpg-error-1.47-mexdykt7ub45qntoobs63ib2c4zulqz3' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/go-1.22.6-bhq3virbivfhtyurjivdcpmqiga32fx2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/conmon-2.1.7-i6diwxu5cyamzn223pd7rhfpfrtefx6d' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libseccomp-2.5.4-twkfctcex3xxmgx2vkgxi33vs3tuvipc' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/glib-2.78.3-7yfdjhxpe3u5f74e6kergvlzs5zikroe' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/util-linux-2.39.1-sggsbmx5glqw2ibcrrtkj5hj2uuutypj' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/python-3.10.13-26falgo4ve77cm2ze3ceorospqdc5dyw' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/tk-8.6.11-bcxjo2zyrmbli455mbsdcsfbn6mjpkhq' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxscrnsaver-1.2.4-6psqbjbwyw4ooudzpcxvje3wstlsjlru' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/scrnsaverproto-1.2.2-ikxlxzbj6ix6twokfb2uyjcqxifhgxcl' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.772s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxext-1.3.5-y5oqwkjr5pplpowzqwptvjihdc4uasyn' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxft-2.3.8-2rwm6canzpr7p42okgooggma6dbncv5d' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxrender-0.9.11-ciqv4wx5qlm5xcht3orq7lpcyxwkyjbo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/renderproto-0.11.1-fmjf722e3nplmsk4rw7ksygdlxtw5mcq' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/fontconfig-2.14.2-sgnfni2gh27j2irmpqszr2orde6gm25e' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/util-linux-uuid-2.38.1-sq7tdm6vrmcrnya3r2xwyptgrfpdfrxv' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/freetype-2.11.1-sqh6wgf52gi2oapmsjobyld7bg77tfjp' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libpng-1.6.44-m4vapx6z6brqz77zky5akuaumvwtxfdy' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/font-util-1.4.0-7hawn4fnx2xikbkroj2xeg7rmebh7bbv' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libx11-1.8.7-w6xoz7d7y2r6tj7mb36ywtwcfegb6kwp' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/xtrans-1.5.0-bswh23eataypgnoyysecpvo3ittddveg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/xextproto-7.3.0-ejgzs3eszyjdepfwszjwb2w2f4le3wir' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxcb-1.16.1-blht3cis2cukzudslf4lnaghzzi7lfnr' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxdmcp-1.1.4-5gkdnmggbpnpxyjpa5e5y4gv6oxhfojm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxau-1.0.11-bmpwhxbed5jskozbimsgr6rn5eestynw' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/xproto-7.0.31-lcjxdk4qa36t6nhtvol2rnrgqnha3p4t' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libpthread-stubs-0.4-z3yw6j5ncnqlazihqsgle5aj37ftttfm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/kbproto-1.0.7-gwzrjpakbhmknb2ldt73m235ntbejh3o' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/inputproto-2.3.2-n5wrf5xujjufdp3yicm4b5ben46ifwdu' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/tcl-8.6.12-zk3ific3ys4jdi6xvku5ru5lbp4gwaia' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/sqlite-3.43.2-cb6o2hbipdqfzumebxi3ew4lcni2d4re' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/openssl-3.2.1-opagwezqarptgkv4vwwrwysmmct7i5vh' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxcrypt-4.4.35-6s3xxqcpqkb43ogxj7hyylqph7iumvve' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/expat-2.5.0-i4bwgdyh542kc2efbg7iotzjqjq5ttiz' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libbsd-0.11.7-62o3teylc4ffbl55v223hdcvibjrlgjd' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libmd-1.0.4-f2hv4ktmqdufjv4jvzmjrt754flgw37h' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.773s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/perl-5.38.0-otbnawnrm2ordhafekcbgmvcvfyob2gl' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/gdbm-1.23-c7dqcnikdzkbwmhmliwpd32ury2qsoak' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/readline-8.2-4mf5lk7ulj6fsnssd3fvtqvjiu62spts' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/berkeley-db-18.1.40-ph7yuzqlgknvgv3wdw2iygwjetvds3rp' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/pcre2-10.42-new5jug25hny3spsaqd7ni4od6g43vj2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libffi-3.4.6-xeb5kaoa6egbfgcxpjhwwazzvsj2ciuc' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/elfutils-0.190-efjewtkl4hbufsruim335vnos7ybghqo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/pkgconf-1.9.5-fseiecldkxmxywuigkyo7kqpbwqaev2q' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/gettext-0.22.4-ecozzf73sehv3swz5hupqufotaizil3s' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/tar-1.34-mrb73ru5naidot2b3ittgiwu2gzvsv35' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/zstd-1.5.5-v5nszg722cm7hx64gx7zcfalohzmicg5' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/pigz-2.8-saijt4vsmj4v7gew2zucelrlvaton4ll' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/ncurses-6.4-4hpmrdng2xed4uf6aeut45jpoihhknpj' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libxml2-2.10.3-evrjztb2z5k2p3if2qyfkaav6pjpncdg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/zlib-ng-2.1.5-odnmx4vuukjili4aveyqxs5tzo4vhwzq' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/xz-5.4.6-5xmmxalmhkbaclh47qlvpv7kaoue6kq6' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/libiconv-1.17-yn2kxrghvswtnw3kcrlgcfcj26dzeg5n' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/bzip2-1.0.8-dehlxr3o3mkqofdvk3srbhbrq4gytisc' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.774s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/.autofs/tools/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-12.3.1/gcc-runtime-12.3.1-pigkwauko4nert7avrbqpoii7dxii3md' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.782s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_driver' with build type 'ament_cmake'
+[0.783s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_driver'
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.788s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/Ur5_simulation/src/grasping_objects' with build type 'ament_cmake'
+[0.788s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/Ur5_simulation/src/grasping_objects'
+[0.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.794s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_controllers' with build type 'ament_cmake'
+[0.795s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_controllers'
+[0.795s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.801s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_description' with build type 'ament_cmake'
+[0.801s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_description'
+[0.801s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.801s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/Ur5_simulation/src/build/ur5e_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/ur5e_sim -- -j36 -l36
+[0.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/Ur5_simulation/src/build/robotiq_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake /workspace/Ur5_simulation/src/ros2_robotiq_gripper/robotiq_driver -DCMAKE_INSTALL_PREFIX=/workspace/Ur5_simulation/src/install/robotiq_driver
+[0.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/Ur5_simulation/src/build/grasping_objects': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/grasping_objects -- -j36 -l36
+[0.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/Ur5_simulation/src/build/robotiq_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/robotiq_controllers -- -j36 -l36
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/Ur5_simulation/src/build/robotiq_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/robotiq_description -- -j36 -l36
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/Ur5_simulation/src/build/ur5e_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/ur5e_sim -- -j36 -l36
+[1.033s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5e_sim)
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/workspace/Ur5_simulation/src/install/ur5e_sim' for CMake module files
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/workspace/Ur5_simulation/src/install/ur5e_sim' for CMake config files
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/workspace/Ur5_simulation/src/install/ur5e_sim/bin'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/workspace/Ur5_simulation/src/install/ur5e_sim/lib/pkgconfig/ur5e_sim.pc'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/workspace/Ur5_simulation/src/install/ur5e_sim/lib/python3.10/site-packages'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/workspace/Ur5_simulation/src/install/ur5e_sim/bin'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/Ur5_simulation/src/install/ur5e_sim/share/ur5e_sim/package.ps1'
+[1.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/Ur5_simulation/src/install/ur5e_sim/share/ur5e_sim/package.dsv'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/Ur5_simulation/src/install/ur5e_sim/share/ur5e_sim/package.sh'
+[1.048s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/Ur5_simulation/src/install/ur5e_sim/share/ur5e_sim/package.bash'
+[1.049s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/Ur5_simulation/src/install/ur5e_sim/share/ur5e_sim/package.zsh'
+[1.051s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/Ur5_simulation/src/install/ur5e_sim/share/colcon-core/packages/ur5e_sim)
+[3.808s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.808s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.808s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[3.808s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.827s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.827s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.827s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.827s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.828s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/70724/bus: No such file or directory
+[3.828s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/Ur5_simulation/src/install/local_setup.ps1'
+[3.833s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/Ur5_simulation/src/install/_local_setup_util_ps1.py'
+[3.836s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/Ur5_simulation/src/install/setup.ps1'
+[3.839s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/Ur5_simulation/src/install/local_setup.sh'
+[3.841s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/Ur5_simulation/src/install/_local_setup_util_sh.py'
+[3.843s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/Ur5_simulation/src/install/setup.sh'
+[3.847s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/Ur5_simulation/src/install/local_setup.bash'
+[3.850s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/Ur5_simulation/src/install/setup.bash'
+[3.853s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/Ur5_simulation/src/install/local_setup.zsh'
+[3.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/Ur5_simulation/src/install/setup.zsh'

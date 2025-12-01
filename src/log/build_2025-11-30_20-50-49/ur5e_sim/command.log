@@ -1,0 +1,2 @@
+Invoking command in '/workspace/Ur5_simulation/src/build/ur5e_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/ur5e_sim -- -j36 -l36
+Invoked command in '/workspace/Ur5_simulation/src/build/ur5e_sim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/ur5e_sim -- -j36 -l36
