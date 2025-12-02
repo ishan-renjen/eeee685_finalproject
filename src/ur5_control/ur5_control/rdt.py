@@ -1,4 +1,4 @@
-#colcon build --packages-skip robotiq_driver robotiq_hardware_tests --event-handlers console_direct+
+#colcon build --symlink-install --packages-skip robotiq_driver robotiq_hardware_tests --event-handlers console_direct+
 
 import sys
 from pathlib import Path
