@@ -155,7 +155,10 @@
   <xacro:arg name="use_fake_hardware" default="true" />
   <xacro:arg name="com_port" default="/dev/ttyUSB0" />
 
-
+   <!-- Example: mount camera on tool0 -->
+  <xacro:ur5e_depth_camera parent_link="tool0">
+    <origin xyz="0.0 0.0 0.15" rpy="0 0 0" />
+  </xacro:ur5e_depth_camera>
 
   <!-- Import macros -->
   <xacro:include filename="$(find ur5e_sim)/urdf/robotiq_gripper_macro.xacro" />
