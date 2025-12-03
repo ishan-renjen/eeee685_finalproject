@@ -1,91 +1,76 @@
-# #colcon build --symlink-install --packages-skip robotiq_driver robotiq_hardware_tests --event-handlers console_direct+
+import rclpy
+from rclpy.node import Node
+#https://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/JointState.html
+#https://docs.ros.org/en/jade/api/sensor_msgs/html/msg/Image.html
+from sensor_msgs.msg import Image, JointState
+from cv_bridge import CvBridge
+import cv2
+from collections import deque
+import torch
+import numpy as np
+from dataclasses import dataclass
 
-# import sys
-# from pathlib import Path
-# # This file: .../Ur5_simulation/src/rdt_ur5_controller/rdt_ur5_controller/rdt_node.py
-# # parents[0] = rdt_ur5_controller (pkg dir)
-# # parents[1] = rdt_ur5_controller (src dir for pkg)
-# # parents[2] = src/
-# RDT_ROOT = Path(__file__).resolve().parents[2] / "RoboticsDiffusionTransformer"
-# sys.path.insert(0, str(RDT_ROOT))
+camera_topic = '/camera/image_raw'
+joint_state_topic = '/joint_states'
 
-# import rlcpy
-# from rlcpy import Node
+def get_config():
+    config = {
+        'episode_len': 1000,
+        'state_dim': 7,
+        'chunk_size': 64,
+        'camera_names': ['cam_right_wrist'],
+    }
+    return config
 
-# from std_msgs.msg import String
-# from sensor_msgs.msg import Image
-# from sensor_msgs.msg import JointState
+@dataclass
+class Config:
+    episode_len: int
+    state_dim: int
+    chunk_size: int
+    camera_name: str
 
-# import torch
-# import PIL
+class RDTController(Node):
+    def __init__(self):
+        super().__init__("RDTController")
+        
+        #create queues for input to RDT
+        self.image_queue = deque()
+        self.action_queue = deque()
 
-# from scripts.agilex_model import create_model
+        #define RDT config data
+        self.config = Config(1000, 7, 64, 'cam_right_wrist')
 
-# camera_topic = '/gazebo_camera'
-# text_instruction = "placeholder_instruction"
+        #define joint info
+        self.last_joint_state = None
+        self.joint_names = ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
 
-# #https://huggingface.co/robotics-diffusion-transformer/rdt-170m
-# def get_config():
-#     config = {
-#         'episode_len': 1000,
-#         'state_dim': 7,
-#         'chunk_size': 64,
-#         'camera_names': ['cam_right_wrist'],
-#     }
-#     return config
+        #instantiate pub/sub objects
+        self.image_sub = self.create_subscription(Image, '/camera/image_raw', self.process_images, 10)
+        self.joint_sub = self.create_subscription(JointState,'/joint_states',self.get_jointstate,10)
 
-# def get_images():
-#     return
+        #instantiate timer for running inference at the control freq.
+        self.freq = 25 #default
+        self.period = 1/self.freq
+        self.timer = self.create_timer(self.period, self.run_inference)
 
+        #model-specific objects
+        self.text_embedding = self.load_text_embedding()
+        self.model = self.load_rdt()
 
+    def run_inference(self):
+        return
+    
+    def get_jointstate(self):
+        return
+    
+    def process_images(self):
+        return
 
-# pretrained_vision_encoder_name_or_path = "google/siglip-so400m-patch14-384" 
-# # Create the model with the specified configuration
-# model = create_model(
-#     args=get_config(),
-#     dtype=torch.bfloat16, 
-#     pretrained_vision_encoder_name_or_path=pretrained_vision_encoder_name_or_path,
-#     pretrained='robotics-diffusion-transformer/rdt-1b',
-#     control_frequency=25,
-# )
-
-# # Start inference process
-# # Load the pre-computed language embeddings
-# # Refer to scripts/encode_lang.py for how to encode the language instruction
-# lang_embeddings_path = 'your/language/embedding/path'
-# text_embedding = torch.load(lang_embeddings_path)['embeddings']  
-# images: List(PIL.Image) = ... #  The images from last 2 frames
-# proprio = ... # The current robot state
-# # Perform inference to predict the next `chunk_size` actions
-# actions = model.step(
-#     proprio=proprio,
-#     images=images,
-#     text_embeds=text_embedding 
-# )
-
-# class RDTPublisher(Node):
-#     def __init__(self):
-#         super().__init__('RDTPublisher')
-#         self.publisher_ = self.create_publisher(String, 'topic', 10)
-#         timer_period = 0.5  # seconds
-#         self.timer = self.create_timer(timer_period, self.timer_callback)
-#         self.i = 0
-
-#     def timer_callback(self):
-#         msg = String()
-#         msg.data = 'Hello World: %d' % self.i
-#         self.publisher_.publish(msg)
-#         self.get_logger().info('Publishing: "%s"' % msg.data)
-#         self.i += 1
-
-
-# def main(args=None):
-#     rclpy.init(args=args)
-#     publisher = RDTPublisher()
-#     rclpy.spin(publisher)
-
-#     publisher.destroy_node()
-#     rclpy.shutdown()
-
-# if __name__ == '__main__':
-#     main()
+    def load_rdt(self):
+        return
+    
+    def get_next_action(self):
+        return
+    
+    def load_text_embedding(self):
+        return
