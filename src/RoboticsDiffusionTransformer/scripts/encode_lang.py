@@ -7,19 +7,19 @@ from models.multimodal_encoder.t5_encoder import T5Embedder
 
 
 GPU = 0
-MODEL_PATH = "google/t5-v1_1-xxl"
+MODEL_PATH = "../../encoders/t5-v1_1-xxl"
 CONFIG_PATH = "configs/base.yaml"
 SAVE_DIR = "outs/"
 
 # Modify this to your task name and instruction
-TASK_NAME = "handover_pan"
-INSTRUCTION = "Pick up the black marker on the right and put it into the packaging box on the left."
+# TASK_NAME = "handover_pan"
+# INSTRUCTION = "Pick up the black marker on the right and put it into the packaging box on the left."
 
 # Note: if your GPU VRAM is less than 24GB, 
 # it is recommended to enable offloading by specifying an offload directory.
-OFFLOAD_DIR = None  # Specify your offload directory here, ensuring the directory exists.
+OFFLOAD_DIR = "../offload_dir"  # Specify your offload directory here, ensuring the directory exists.
 
-def main():
+def encode_lang(INSTRUCTION, TASK_NAME):
     with open(CONFIG_PATH, "r") as fp:
         config = yaml.safe_load(fp)
     

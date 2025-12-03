@@ -1,17 +1,28 @@
 import rclpy
 from rclpy.node import Node
+from sensor_msgs.msg import Image, JointState
 #https://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/JointState.html
 #https://docs.ros.org/en/jade/api/sensor_msgs/html/msg/Image.html
-from sensor_msgs.msg import Image, JointState
+from builtin_interfaces.msg import Duration
+
 from cv_bridge import CvBridge
 import cv2
-from collections import deque
+from PIL import Image as PILImage
+
 import torch
 import numpy as np
-from dataclasses import dataclass
+
+from collections import deque
+from dataclasses import dataclass, asdict
+
+import example_move
+from RoboticsDiffusionTransformer.scripts import agilex_model, encode_lang
 
 camera_topic = '/camera/image_raw'
 joint_state_topic = '/joint_states'
+
+TASK_NAME = "handover_pan"
+INSTRUCTION = "Pick up the black marker on the right and put it into the packaging box on the left."
 
 def get_config():
     config = {
@@ -27,7 +38,7 @@ class Config:
     episode_len: int
     state_dim: int
     chunk_size: int
-    camera_name: str
+    camera_names: list[str]
 
 class RDTController(Node):
     def __init__(self):
@@ -38,7 +49,7 @@ class RDTController(Node):
         self.action_queue = deque()
 
         #define RDT config data
-        self.config = Config(1000, 7, 64, 'cam_right_wrist')
+        self.config = Config(1000, 7, 64, ['cam_right_wrist'])
 
         #define joint info
         self.last_joint_state = None
@@ -51,26 +62,91 @@ class RDTController(Node):
         #instantiate timer for running inference at the control freq.
         self.freq = 25 #default
         self.period = 1/self.freq
-        self.timer = self.create_timer(self.period, self.run_inference)
+        self.action_period = self.period/64
+        self.inference_timer = self.create_timer(self.period, self.run_inference)
+        self.execution_timer = self.create_timer(self.action_period, self.execute_action)
 
         #model-specific objects
-        self.text_embedding = self.load_text_embedding()
+        self.text_embedding = self.load_text_embedding(INSTRUCTION, TASK_NAME)
         self.model = self.load_rdt()
 
-    def run_inference(self):
-        return
+        #ur5 client object
+        self.jtc_client = example_move.JTCClient()
     
-    def get_jointstate(self):
-        return
+    def get_jointstate(self, msg: JointState):
+        self.joint_names = list(msg.name)
+        self.last_joint_state = torch.tensor(msg.position, dtype=torch.float32)
     
-    def process_images(self):
-        return
+    def process_images(self, msg: Image):
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='rgb8')
+        except Exception as e:
+            self.get_logger().error(f"CvBridge error: {e}")
+            return
+        
+        pil_image = PILImage.fromarray(cv_image[:, :, ::-1])
+        self.image_queue.append(pil_image)
+
+    def get_next_action(self) -> list[float]:
+        return self.action_queue.pop()
 
     def load_rdt(self):
-        return
+        pretrained_vision_encoder_name_or_path = "../../encoders/siglip-so400m-patch14-384" 
+        # Create the model with the specified configuration
+        model = agilex_model.create_model(
+            args=asdict(self.config),
+            dtype=torch.bfloat16, 
+            pretrained_vision_encoder_name_or_path=pretrained_vision_encoder_name_or_path,
+            pretrained='robotics-diffusion-transformer/rdt-1b',
+            control_frequency=25)
+
+        return model
     
-    def get_next_action(self):
-        return
-    
-    def load_text_embedding(self):
-        return
+    def load_text_embedding(self, INSTRUCTION, TASK_NAME):
+        encode_lang.encode_lang(INSTRUCTION, TASK_NAME)
+
+    def run_inference(self):
+        if self.model is None:
+            return
+        if self.last_joint_state is None:
+            return
+        if len(self.image_queue) < 2:
+            return
+
+        lang_embeddings_path = '../../RoboticsDiffusionTransformer/scripts/outs/'
+        text_embedding = torch.load(lang_embeddings_path)['embeddings']  
+        images = list(self.image_queue)
+        proprio = self.last_joint_state
+        # Perform inference to predict the next `chunk_size` actions
+        if len(self.action_queue) > 0:
+            self.action_queue.clear()
+
+        actions = self.model.step(proprio=proprio, images=images, text_embeds=text_embedding)
+        self.action_queue = deque(actions)
+
+    def execute_action(self):
+
+        if len(self.action_queue) > 1:
+            return
+
+        TRAJECTORIES = {
+            "traj0": [
+                {
+                    "positions": self.get_next_action(),
+                    "velocities": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+                    "time_from_start": Duration(sec=0, nanosec=0),
+                }
+            ]
+        }
+        example_move.set_trajectories(TRAJECTORIES)
+
+def main(args=None):
+
+    rclpy.init(args=args)
+    node = RDTController()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()
