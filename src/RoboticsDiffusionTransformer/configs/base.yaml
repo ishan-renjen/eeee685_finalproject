@@ -19,11 +19,12 @@ dataset:
   # read by the consumer with new data
 
   # The path to the buffer (at least 400GB)
-  buf_path: /path/to/buffer
+  buf_path: "/mnt/c/Users/DIEGO/Documents/Principles of Robotics/eeee685_finalproject/src/buffer"
+
   # The number of chunks in the buffer
-  buf_num_chunks: 512
+  buf_num_chunks: 8
   # The number of samples (step rather than episode) in each chunk
-  buf_chunk_size: 512
+  buf_chunk_size: 64
 
   # We will filter the episodes with length less than `epsd_len_thresh_low`
   epsd_len_thresh_low: 32
