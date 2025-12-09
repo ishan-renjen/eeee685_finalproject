@@ -8,7 +8,7 @@ from models.multimodal_encoder.t5_encoder import T5Embedder
 
 GPU = 0
 MODEL_PATH = "../../encoders/t5-v1_1-xxl"
-CONFIG_PATH = "configs/base.yaml"
+CONFIG_PATH = "src/RoboticsDiffusionTransformer/configs/base.yaml"
 SAVE_DIR = "outs/"
 
 # Modify this to your task name and instruction

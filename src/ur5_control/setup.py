@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'rdt = ur5_control.rdt:main'
+            'rdt = ur5_control.rdt:main',
             'image_saver = ur5_control.ImageSaver:main'
         ],
     },

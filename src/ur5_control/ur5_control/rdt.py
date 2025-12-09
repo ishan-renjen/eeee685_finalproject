@@ -11,11 +11,44 @@ from PIL import Image as PILImage
 
 import torch
 import numpy as np
+import sys
 
 from collections import deque
 from dataclasses import dataclass, asdict
+from pathlib import Path
 
-import example_move
+# Make sure the workspace src/ is on sys.path no matter where we run from.
+# This file ends up installed as:
+#   ~/robotics/Ur5_simulation/install/ur5_control/lib/ur5_control/rdt
+# but the *source* lives under:
+#   ~/robotics/Ur5_simulation/src/ur5_control/ur5_control/rdt.py
+#
+# So we walk up to the workspace root and add "src" to sys.path.
+this_file = Path(__file__).resolve()
+# When running from build tree, parents look like:
+#   0: .../build/ur5_control/ur5_control
+#   1: .../build/ur5_control
+#   2: .../build
+#   3: .../Ur5_simulation
+# When running from install tree, they look like:
+#   0: .../install/ur5_control/lib/ur5_control
+#   1: .../install/ur5_control/lib
+#   2: .../install/ur5_control
+#   3: .../install
+#   4: .../Ur5_simulation
+# We handle both by searching upwards for the workspace root name.
+ws_root = None
+for p in this_file.parents:
+    if p.name == "Ur5_simulation":  # your workspace folder name
+        ws_root = p
+        break
+
+if ws_root is not None:
+    src_dir = ws_root / "src"
+    if str(src_dir) not in sys.path:
+        sys.path.insert(0, str(src_dir))
+
+import ur5_control.example_move as example_move
 from RoboticsDiffusionTransformer.scripts import agilex_model, encode_lang
 
 camera_topic = '/camera/image_raw'
@@ -125,7 +158,6 @@ class RDTController(Node):
         self.action_queue = deque(actions)
 
     def execute_action(self):
-
         if len(self.action_queue) > 1:
             return
 
