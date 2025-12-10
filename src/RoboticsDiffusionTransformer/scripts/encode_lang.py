@@ -22,7 +22,7 @@ from models.multimodal_encoder.t5_encoder import T5Embedder
 
 # GPU index to use
 GPU = 0
-MODEL_PATH = "../../encoders/t5-v1_1-xxl"
+MODEL_PATH = "google/t5-v1_1-xxl"
 CONFIG_PATH = "src/RoboticsDiffusionTransformer/configs/base.yaml"
 SAVE_DIR = "outs/"
 
