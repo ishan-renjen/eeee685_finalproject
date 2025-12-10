@@ -4,6 +4,8 @@
    <!-- robot name parameter -->
    <xacro:arg name="name" default="ur"/>
    <!-- import main macro -->
+   <xacro:property name="URYT" value="$(find ur5e_sim)"/>
+   <xacro:property name="ROBI" value="$(find robotiq_description)"/>
    <xacro:include filename="$(find ur5e_sim)/urdf/camera.xacro"/>
    <xacro:include filename="$(find ur5e_sim)/urdf/ur5_macro.xacro"/>
 
