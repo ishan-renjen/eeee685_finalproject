@@ -1,1 +1,0 @@
-Invoking command in '/workspace/Ur5_simulation/src/build/robotiq_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake --build /workspace/Ur5_simulation/src/build/robotiq_controllers --clean-first -- -j36 -l36

@@ -1,1 +1,0 @@
-Invoking command in '/workspace/Ur5_simulation/src/build/ur5e_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PS1=Apptainer> /usr/bin/cmake /workspace/Ur5_simulation/src/ur5e_sim -DCMAKE_INSTALL_PREFIX=/workspace/Ur5_simulation/src/install/ur5e_sim

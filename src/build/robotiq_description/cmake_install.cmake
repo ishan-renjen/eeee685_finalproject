@@ -1,8 +1,8 @@
-# Install script for directory: /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description
+# Install script for directory: /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/eeee784/vince_ros2_ws/src/install/robotiq_description")
+  set(CMAKE_INSTALL_PREFIX "/workspace/eeee685_finalproject/src/install/robotiq_description")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,72 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE DIRECTORY FILES
-    "/home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description/config"
-    "/home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description/launch"
-    "/home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description/meshes"
-    "/home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description/rviz"
-    "/home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description/urdf"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robotiq_description")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robotiq_description")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description/environment" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description/environment" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/path.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/local_setup.bash")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/local_setup.sh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/local_setup.zsh")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/local_setup.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_environment_hooks/package.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_index/share/ament_index/resource_index/packages/robotiq_description")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description/cmake" TYPE FILE FILES
-    "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_core/robotiq_descriptionConfig.cmake"
-    "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/ament_cmake_core/robotiq_descriptionConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robotiq_description" TYPE FILE FILES "/home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_description/package.xml")
+  include("/workspace/eeee685_finalproject/src/build/robotiq_description/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -119,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/eeee784/vince_ros2_ws/src/build/robotiq_description/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/workspace/eeee685_finalproject/src/build/robotiq_description/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

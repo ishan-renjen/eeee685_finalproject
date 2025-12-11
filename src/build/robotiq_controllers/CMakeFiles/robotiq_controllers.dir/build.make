@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers
+CMAKE_SOURCE_DIR = /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eeee784/vince_ros2_ws/src/build/robotiq_controllers
+CMAKE_BINARY_DIR = /workspace/eeee685_finalproject/src/build/robotiq_controllers
 
 # Include any dependencies generated for this target.
 include CMakeFiles/robotiq_controllers.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/robotiq_controllers.dir/progress.make
 include CMakeFiles/robotiq_controllers.dir/flags.make
 
 CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o: CMakeFiles/robotiq_controllers.dir/flags.make
-CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o: /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp
+CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o: /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp
 CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o: CMakeFiles/robotiq_controllers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eeee784/vince_ros2_ws/src/build/robotiq_controllers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o -MF CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o.d -o CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o -c /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/eeee685_finalproject/src/build/robotiq_controllers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o -MF CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o.d -o CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o -c /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp
 
 CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp > CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp > CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.i
 
 CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp -o CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers/src/robotiq_activation_controller.cpp -o CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.s
 
 # Object files for target robotiq_controllers
 robotiq_controllers_OBJECTS = \
@@ -92,6 +92,7 @@ robotiq_controllers_EXTERNAL_OBJECTS =
 
 librobotiq_controllers.so: CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o
 librobotiq_controllers.so: CMakeFiles/robotiq_controllers.dir/build.make
+librobotiq_controllers.so: /opt/ros/humble/lib/libcontroller_interface.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
@@ -101,149 +102,67 @@ librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.
 librobotiq_controllers.so: /opt/ros/humble/lib/libfake_components.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libmock_components.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libhardware_interface.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_introspection_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librmw.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-librobotiq_controllers.so: /opt/ros/humble/lib/libclass_loader.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libclass_loader.so
-librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcl.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_runtime_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libtracetools.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcl_lifecycle.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcpputils.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcutils.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librclcpp_lifecycle.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librclcpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcl_lifecycle.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libcontroller_interface.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libtrajectory_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libclass_loader.so
 librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+librobotiq_controllers.so: /opt/ros/humble/lib/librclcpp_lifecycle.so
+librobotiq_controllers.so: /opt/ros/humble/lib/librclcpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/liblibstatistics_collector.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -261,6 +180,15 @@ librobotiq_controllers.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesu
 librobotiq_controllers.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/librcl_lifecycle.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_py.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librcl.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
@@ -271,11 +199,12 @@ librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typ
 librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librcl_yaml_param_parser.so
 librobotiq_controllers.so: /opt/ros/humble/lib/libyaml.so
@@ -290,19 +219,16 @@ librobotiq_controllers.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 librobotiq_controllers.so: /opt/ros/humble/lib/librmw.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
-librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-librobotiq_controllers.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
-librobotiq_controllers.so: /opt/ros/humble/lib/librcpputils.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librosidl_runtime_c.so
+librobotiq_controllers.so: /opt/ros/humble/lib/librcpputils.so
 librobotiq_controllers.so: /opt/ros/humble/lib/librcutils.so
+librobotiq_controllers.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 librobotiq_controllers.so: CMakeFiles/robotiq_controllers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eeee784/vince_ros2_ws/src/build/robotiq_controllers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library librobotiq_controllers.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/eeee685_finalproject/src/build/robotiq_controllers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library librobotiq_controllers.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotiq_controllers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -314,6 +240,6 @@ CMakeFiles/robotiq_controllers.dir/clean:
 .PHONY : CMakeFiles/robotiq_controllers.dir/clean
 
 CMakeFiles/robotiq_controllers.dir/depend:
-	cd /home/eeee784/vince_ros2_ws/src/build/robotiq_controllers && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers /home/eeee784/vince_ros2_ws/src/ros2_robotiq_gripper/robotiq_controllers /home/eeee784/vince_ros2_ws/src/build/robotiq_controllers /home/eeee784/vince_ros2_ws/src/build/robotiq_controllers /home/eeee784/vince_ros2_ws/src/build/robotiq_controllers/CMakeFiles/robotiq_controllers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/eeee685_finalproject/src/build/robotiq_controllers && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers /workspace/eeee685_finalproject/src/ros2_robotiq_gripper/robotiq_controllers /workspace/eeee685_finalproject/src/build/robotiq_controllers /workspace/eeee685_finalproject/src/build/robotiq_controllers /workspace/eeee685_finalproject/src/build/robotiq_controllers/CMakeFiles/robotiq_controllers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robotiq_controllers.dir/depend
 

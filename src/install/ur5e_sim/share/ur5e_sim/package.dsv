@@ -1,3 +1,6 @@
+source;share/ur5e_sim/hook/cmake_prefix_path.ps1
+source;share/ur5e_sim/hook/cmake_prefix_path.dsv
+source;share/ur5e_sim/hook/cmake_prefix_path.sh
 source;share/ur5e_sim/local_setup.bash
 source;share/ur5e_sim/local_setup.dsv
 source;share/ur5e_sim/local_setup.ps1

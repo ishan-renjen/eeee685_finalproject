@@ -1,4 +1,0 @@
-[0mCMake Error: The current CMakeCache.txt directory /workspace/Ur5_simulation/src/build/ur5e_sim/CMakeCache.txt is different than the directory /home/eeee784/vince_ros2_ws/src/build/ur5e_sim where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0mCMake Error: The source directory "/home/eeee784/vince_ros2_ws/src/ur5e_sim" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.[0m
-gmake: *** [Makefile:226: cmake_check_build_system] Error 1
