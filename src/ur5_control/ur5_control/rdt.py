@@ -126,8 +126,8 @@ class RDTController(Node):
             f"[RDTController] Creating timers: inference @ {self.freq} Hz, "
             f"execution @ {1.0 / self.action_period:.1f} Hz"
         )
-        self.inference_timer = self.create_timer(self.period, self.run_inference)
-        self.execution_timer = self.create_timer(self.action_period, self.execute_action)
+        self.inference_timer = self.create_timer(1, self.run_inference)
+        self.execution_timer = self.create_timer(self.period, self.execute_action)
 
         # Model-specific objects
         print("[RDTController] Loading text embedding...")
