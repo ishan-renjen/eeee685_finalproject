@@ -42,6 +42,7 @@ joint_state_topic = "/joint_states"
 TASK_NAME = "handover_pan"
 INSTRUCTION = "Pick up the red box on your right."
 
+CHUNK_LOW = 10
 
 def get_config():
     return {
@@ -246,6 +247,9 @@ class RDTController(Node):
     def run_inference(self):
         print("[RDTController] run_inference: timer callback")
 
+        if len(self.action_queue) > CHUNK_LOW:
+            print("[RDTController] run_inference: action queue > CHUNK_LOW, skipping")
+            return
         if self.model is None:
             print("[RDTController] run_inference: model is None, skipping")
             return
