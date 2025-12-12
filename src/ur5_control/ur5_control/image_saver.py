@@ -33,7 +33,7 @@ class ImageSaver(Node):
             return
 
         # Generate filename
-        filename = f"/home/ishan/robotics/Ur5_simulation/saved_frame_{self.frame_id:05d}.png"
+        filename = f"/workspace/eeee685_finalproject/src/ur5_control/ur5_control/images/saved_frame_{self.frame_id:05d}.png"
 
         # Save with OpenCV
         cv2.imwrite(filename, cv_image)
