@@ -339,7 +339,7 @@ class RDTController(Node):
                     "positions": positions,
                     "velocities": [0.0] * num_arm_joints,
                     # give the controller time to move
-                    "time_from_start": Duration(sec=1, nanosec=0),
+                    "time_from_start": Duration(sec=0, nanosec=int(self.action_period * 1e9))
                 }
             ]
         }
