@@ -47,6 +47,7 @@ def generate_launch_description():
     y_arg = DeclareLaunchArgument('y', default_value='0', description='Y position of the robot')
     z_arg = DeclareLaunchArgument('z', default_value='0', description='Z position of the robot')
 
+
     # Include Gazebo launch file
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(gazebo_launch_file),

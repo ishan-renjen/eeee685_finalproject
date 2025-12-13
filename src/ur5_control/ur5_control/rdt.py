@@ -332,7 +332,17 @@ class RDTController(Node):
             ]
         }
 
+        # Print traj0 contents
+        print("[RDTController] TRAJECTORIES['traj0'] =")
+        for i, pt in enumerate(TRAJECTORIES["traj0"]):
+            print(f"  point {i}:")
+            print(f"    positions: {np.round(np.asarray(pt['positions'], dtype=float), 4)}")
+            print(f"    velocities: {pt['velocities']}")
+            tfs = pt["time_from_start"]
+            print(f"    time_from_start: {tfs.sec}s {tfs.nanosec}ns")
+
         self.jtc_client.set_trajectories(TRAJECTORIES)
+
 
 
 def main(args=None):
