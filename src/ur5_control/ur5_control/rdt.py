@@ -14,6 +14,11 @@ from cv_bridge import CvBridge
 from rclpy.node import Node
 from sensor_msgs.msg import Image, JointState
 
+joint_mean =  [-3.2655642159915867, -1.321792694304618, 2.1238138343764996, -2.3727080759452313, -1.5671833998713485, 3.0003631086696823]
+gripper_mean = 0.6297082878118012
+joint_std_dev = [0.2740532744026393,0.2738610126108144,0.22893091743678545,0.34505882703745394,0.10539695961596628,0.33995196531349553]
+gripper_std_dev = 0.6085159917275789
+
 # =============================================================================
 # Workspace path setup
 # =============================================================================
@@ -309,8 +314,10 @@ class RDTController(Node):
 
         a7 = np.asarray(self.get_next_action(), dtype=np.float32).reshape(-1)  # (7,)
         q6 = a7[:6]  # assume first 6 correspond to UR5 joints in UR5 order
-
         positions = q6.astype(float).tolist()
+
+        for idx, item in enumerate(positions):
+            item = (item - joint_mean[idx])/joint_std_dev[idx]
 
         # Pad/trim to what JTC expects
         if len(positions) < self.num_arm_joints:
